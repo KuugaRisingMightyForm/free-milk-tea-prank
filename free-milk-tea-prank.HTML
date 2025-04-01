@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免费领取奶茶 - 限时活动</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff0f5;
+            padding: 50px;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 免费领取奶茶！🎉</h1>
+        <p>限量1000杯，先到先得！输入手机号领取：</p>
+        <input type="text" id="phone" placeholder="输入手机号">
+        <button onclick="claimTea()">领取</button>
+    </div>
+
+    <script>
+        function claimTea() {
+            let phone = document.getElementById("phone").value;
+            if (phone) {
+                alert("🎉 恭喜！你是第1位上当的人！愚人节快乐！😂");
+            } else {
+                alert("请输入手机号！");
+            }
+        }
+    </script>
+</body>
+</html>
